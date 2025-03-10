@@ -1,0 +1,64 @@
+Problem 1: Calculate the Sum of Natural Numbers
+
+BEGIN
+    INPUT n
+    SET sum = 0
+    FOR i = 1 TO n DO
+        sum = sum + i
+    END FOR
+    PRINT sum
+END
+
+Problem 2: Check for Prime Number
+
+BEGIN
+    INPUT n
+    IF n <= 1 THEN
+        PRINT n, "is not a prime number."
+        EXIT
+    FOR i = 2 TO √n + 1
+        IF n MOD i = 0 THEN
+            PRINT n, "is not a prime number."
+            EXIT
+        END IF
+    END FOR
+    PRINT n, "is a prime number."
+END
+
+Problem 3: Find the Maximum of Three Numbers
+
+BEGIN
+    INPUT a
+    INPUT b
+    INPUT c
+    IF a >= b AND a >= c THEN
+        PRINT "The largest number is ", a
+    ELSE IF b >= a AND b >= c THEN
+        PRINT "The largest number is ", b
+    ELSE
+        PRINT "The largest number is ", c
+    END IF
+END
+
+Problem 4: Factorial Calculation
+
+BEGIN
+    INPUT n
+    SET factorial = 1
+    FOR i = 1 TO n DO
+        factorial = factorial * i
+    END FOR
+    PRINT  n
+
+Problem 5: Check if a Number is Even or Odd
+
+BEGIN
+    INPUT n
+    IF n MOD 2 = 0 THEN
+        PRINT n, "is Even"
+    ELSE
+        PRINT n, "is Odd"
+    END IF
+END
+
+
